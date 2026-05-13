@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://be7ci8qtjxt4w"]
+
+[ext_resource type="PackedScene" uid="uid://c0qhe1xflpm8u" path="res://test_character.tscn" id="1_ukp1o"]
+[ext_resource type="PackedScene" uid="uid://sjram2braloj" path="res://rigidBody2d.tscn" id="2_yiy1w"]
+
+[node name="node2d" type="Node2D" unique_id=157253748]
+
+[node name="TestCharacter" parent="." unique_id=441721454 instance=ExtResource("1_ukp1o")]
+position = Vector2(72, -2)
+
+[node name="TestCharacter2" parent="." unique_id=776709294 instance=ExtResource("1_ukp1o")]
+position = Vector2(477, -57)
+
+[node name="camera2d" type="Camera2D" parent="." unique_id=1874473904]
+position = Vector2(320, 305)
+scale = Vector2(0.88, 0.88)
+offset = Vector2(1.235, 11.24)
+zoom = Vector2(0.53, 0.53)
+
+[node name="rigidBody2d2" parent="." unique_id=1525455828 instance=ExtResource("2_yiy1w")]
+position = Vector2(416.00003, 419)
+rotation = -1.8325957
+scale = Vector2(0.99999994, 0.99999994)
+
+[node name="rigidBody2d" parent="." unique_id=1220819962 instance=ExtResource("2_yiy1w")]
+position = Vector2(-478.99997, 149.99998)
+rotation = -0.5235988

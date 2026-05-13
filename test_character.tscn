@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://c0qhe1xflpm8u"]
+
+[ext_resource type="Texture2D" uid="uid://brldyaeth38as" path="res://icon.svg" id="1_fksbf"]
+[ext_resource type="Script" uid="uid://hp52ofh528n4" path="res://button.gd" id="2_num78"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fksbf"]
+size = Vector2(301, 301)
+
+[node name="TestCharacter" type="RigidBody2D" unique_id=713607660]
+
+[node name="collisionShape2d" type="CollisionShape2D" parent="." unique_id=1684258878]
+position = Vector2(3.5, -2.5)
+shape = SubResource("RectangleShape2D_fksbf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1170362692]
+position = Vector2(4, -2)
+scale = Vector2(2.2890625, 2.2890625)
+texture = ExtResource("1_fksbf")
+
+[node name="label" type="Label" parent="." unique_id=946901184]
+offset_left = -37.0
+offset_top = 153.0
+offset_right = 40.0
+offset_bottom = 176.0
+text = "Character"
+
+[node name="button" type="Button" parent="." unique_id=339844076]
+z_index = 2
+offset_left = 65.0
+offset_top = 81.0
+offset_right = 201.0
+offset_bottom = 217.0
+icon = ExtResource("1_fksbf")
+script = ExtResource("2_num78")
