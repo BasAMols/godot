@@ -1,0 +1,63 @@
+[gd_scene format=3 uid="uid://bnsppwwr3mkmy"]
+
+[ext_resource type="SpriteFrames" uid="uid://bw3tx3hlo1bqf" path="res://assets/Peasants_1/blacksmith.tres" id="1_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://djcg20aoajuhp" path="res://assets/village/shop.png" id="1_7mycd"]
+[ext_resource type="Texture2D" uid="uid://jjod5txxmoxn" path="res://assets/village/Tavern green roof.png" id="1_kek77"]
+[ext_resource type="Script" uid="uid://bxtspabjxfmlk" path="res://assets/npc.gd" id="2_7mycd"]
+[ext_resource type="SpriteFrames" uid="uid://cr6aodbois7he" path="res://assets/Peasants_3/trader.tres" id="3_7mycd"]
+[ext_resource type="SpriteFrames" uid="uid://t506qpovttam" path="res://assets/Peasants_4/barkeep.tres" id="4_4c57u"]
+[ext_resource type="PackedScene" uid="uid://ciw6isa4ypnhx" path="res://assets/village/house/customHome.tscn" id="6_7mycd"]
+[ext_resource type="Texture2D" uid="uid://dvtrktlip8dky" path="res://assets/village/market/market stall1.png" id="6_272bh"]
+[ext_resource type="Texture2D" uid="uid://c764uhq5safdn" path="res://assets/village/Stable or Storage.png" id="9_efxa6"]
+
+[node name="main" type="Node2D" unique_id=2042244770]
+
+[node name="tavernGreenRoof" type="Sprite2D" parent="." unique_id=931063995]
+position = Vector2(-206.00002, -78.99999)
+scale = Vector2(0.6369048, 0.64375)
+texture = ExtResource("1_kek77")
+
+[node name="shop" type="Sprite2D" parent="." unique_id=1050734780]
+position = Vector2(47, -101.00001)
+scale = Vector2(0.7019231, 0.7019231)
+texture = ExtResource("1_7mycd")
+
+[node name="customHome" parent="." unique_id=138034359 instance=ExtResource("6_7mycd")]
+position = Vector2(-94, -5)
+scale = Vector2(0.82, 0.82)
+
+[node name="barkeep" type="AnimatedSprite2D" parent="." unique_id=1543618258]
+position = Vector2(-261, -47)
+scale = Vector2(0.3945618, 0.3945618)
+sprite_frames = ExtResource("4_4c57u")
+animation = &"Idle"
+script = ExtResource("2_7mycd")
+
+[node name="blacksmith" type="AnimatedSprite2D" parent="." unique_id=2081563216]
+position = Vector2(77, -52)
+scale = Vector2(0.5078125, 0.5078125)
+sprite_frames = ExtResource("1_1bvp3")
+animation = &"Idle"
+script = ExtResource("2_7mycd")
+
+[node name="trader" type="AnimatedSprite2D" parent="." unique_id=704857802]
+position = Vector2(6, -38)
+scale = Vector2(-0.5682583, 0.5682583)
+sprite_frames = ExtResource("3_7mycd")
+animation = &"Idle"
+script = ExtResource("2_7mycd")
+
+[node name="marketStall1" type="Sprite2D" parent="." unique_id=1980151671]
+position = Vector2(6, -41)
+texture = ExtResource("6_272bh")
+
+[node name="stableOrStorage" type="Sprite2D" parent="." unique_id=1450875974]
+position = Vector2(158, -33)
+scale = Vector2(0.4765624, 0.4765625)
+texture = ExtResource("9_efxa6")
+
+[node name="camera2d" type="Camera2D" parent="." unique_id=479032482]
+position = Vector2(-4, -85)
+scale = Vector2(0.101, 1)
+zoom = Vector2(4.98, 4.98)
+rotation_smoothing_enabled = true
