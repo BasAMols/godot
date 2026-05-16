@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bs4nmc5k7hjxv"]
+
+[ext_resource type="SpriteFrames" uid="uid://dgciytuuts6he" path="res://assets/overworld/fire/fire.tres" id="1_q3uoy"]
+
+[node name="fire" type="AnimatedSprite2D" unique_id=389611261]
+sprite_frames = ExtResource("1_q3uoy")
+animation = &"pot"
+frame_progress = 0.5166373
