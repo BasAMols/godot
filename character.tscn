@@ -1,9 +1,0 @@
-[gd_scene format=3 uid="uid://cmcsvkfqjhs5y"]
-
-[ext_resource type="PackedScene" uid="uid://dmvtw3v8wulg" path="res://assets/Peasants_1/blacksmith.tscn" id="1_glpr6"]
-
-[node name="node2d" type="Node2D" unique_id=1886965973]
-
-[node name="npc" parent="." unique_id=427678905 instance=ExtResource("1_glpr6")]
-position = Vector2(0, -64)
-sprite_frames = null

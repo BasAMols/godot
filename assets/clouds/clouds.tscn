@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cnjn7cry25llr"]
+
+[ext_resource type="Script" uid="uid://dvcomlhtldugb" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/clouds.gd" id="1_rur5b"]
+
+[node name="clouds" type="Node2D" unique_id=1208995173]
+script = ExtResource("1_rur5b")
+metadata/Scale = 1.0
+metadata/Speed = 100.0
+metadata/Gap = 80.0
+metadata/Left = -5000.0
+metadata/Right = 5000.0
+
+[node name="label" type="Label" parent="." unique_id=2044017504]
+offset_left = 4.0
+offset_top = 1.0
+offset_right = 44.0
+offset_bottom = 24.0

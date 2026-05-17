@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ic8w45v3dera"]
+
+[ext_resource type="Script" uid="uid://b5k5j3qku3cft" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/cloud.gd" id="1_hh1sy"]
+
+[node name="cloud" type="Node2D" unique_id=1954459866]
+script = ExtResource("1_hh1sy")
+
+[node name="sprite2d" type="Sprite2D" parent="." unique_id=238104742]
+position = Vector2(3, -1)
+metadata/Src = null

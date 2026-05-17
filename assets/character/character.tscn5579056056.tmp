@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cmcsvkfqjhs5y"]
+
+[ext_resource type="SpriteFrames" uid="uid://ctqwyivk7mieu" path="res://assets/character/GandalfHardcore Maid Character/blue/outfit.tres" id="1_dbrvq"]
+[ext_resource type="Script" uid="uid://dt4xilgyikq6j" path="res://assets/character/character.gd" id="1_rfqar"]
+[ext_resource type="SpriteFrames" uid="uid://5hs7gux2yid7" path="res://assets/character/GandalfHardcore Maid Character/hat.tres" id="2_rfqar"]
+
+[node name="character" type="Node2D" unique_id=1980402342]
+script = ExtResource("1_rfqar")
+
+[node name="outfit" type="AnimatedSprite2D" parent="." unique_id=353069051]
+position = Vector2(0, -32)
+sprite_frames = ExtResource("1_dbrvq")
+animation = &"jump"
+
+[node name="hat" type="AnimatedSprite2D" parent="." unique_id=2087050458]
+position = Vector2(0, -32)
+sprite_frames = ExtResource("2_rfqar")
+animation = &"jump"

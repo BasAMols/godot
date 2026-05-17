@@ -5,18 +5,12 @@
 [ext_resource type="Texture2D" uid="uid://bqjd5ay2x6b85" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 4.png" id="2_bpugw"]
 [ext_resource type="Texture2D" uid="uid://mi4vv153ukjw" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 3.png" id="3_gjjrj"]
 [ext_resource type="Texture2D" uid="uid://dmdk8omb0w2ij" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 2.png" id="4_vvxqx"]
+[ext_resource type="Texture2D" uid="uid://bhov85xmh81tg" path="res://assets/overworld/hot air balloon.png" id="4_yi75v"]
 [ext_resource type="Texture2D" uid="uid://bhv2kpex06rjq" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 1.png" id="5_cdpnt"]
 [ext_resource type="Texture2D" uid="uid://54bkrdmmfmbb" path="res://assets/overworld/birds3.png" id="7_aqimi"]
 [ext_resource type="Script" uid="uid://cwba1cr6a7dt1" path="res://birds.gd" id="8_pv6vt"]
 [ext_resource type="Texture2D" uid="uid://dag170lp0io7f" path="res://assets/overworld/birds4.png" id="9_clro1"]
-[ext_resource type="Texture2D" uid="uid://ddx8reoaf3j7b" path="res://assets/overworld/cloud2.png" id="10_pouta"]
-[ext_resource type="Texture2D" uid="uid://46nydqnek2is" path="res://assets/overworld/cloud3.png" id="11_yi75v"]
-[ext_resource type="Texture2D" uid="uid://chxrtxk6dtne2" path="res://assets/overworld/cloud4.png" id="12_vgh2n"]
-[ext_resource type="Texture2D" uid="uid://fr1ktpwld3to" path="res://assets/overworld/cloud5.png" id="13_3n6nx"]
-[ext_resource type="Texture2D" uid="uid://0itntm4hn36a" path="res://assets/overworld/cloud6.png" id="14_eyxai"]
-
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_8od1q"]
-load_path = "res://.godot/imported/cloud1.png-987c6da25c266946931c56c03f1ef862.ctex"
+[ext_resource type="PackedScene" uid="uid://cnjn7cry25llr" path="res://assets/clouds/clouds.tscn" id="11_clro1"]
 
 [node name="node2d" type="Node2D" unique_id=371353526]
 
@@ -58,47 +52,28 @@ position = Vector2(2674.9998, -21)
 scale = Vector2(2.5751445, 2.5751445)
 texture = ExtResource("2_akd5k")
 
-[node name="Clouds" type="Node2D" parent="parallax2d4" unique_id=801410276]
-position = Vector2(1335, -32)
+[node name="clouds" parent="parallax2d4" unique_id=1479339058 instance=ExtResource("11_clro1")]
+modulate = Color(1, 1, 1, 0.8235294)
+position = Vector2(-435, -375)
+metadata/Scale = 0.7
+metadata/Speed = 3.0
+metadata/Gap = 100.0
+metadata/Left = -500.0
+metadata/Right = 3000.0
 
-[node name="cloud1" type="Sprite2D" parent="parallax2d4/Clouds" unique_id=692255199]
-position = Vector2(44, -409)
-texture = SubResource("CompressedTexture2D_8od1q")
+[node name="hotAirBalloon" type="Sprite2D" parent="parallax2d4" unique_id=1725100536]
+position = Vector2(1182, -349)
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("4_yi75v")
 
-[node name="cloud2" type="Sprite2D" parent="parallax2d4/Clouds" unique_id=962882757]
-position = Vector2(-12, -346)
-texture = ExtResource("10_pouta")
-
-[node name="cloud3" type="Sprite2D" parent="parallax2d4/Clouds" unique_id=869700063]
-position = Vector2(-287, -352)
-texture = ExtResource("11_yi75v")
-
-[node name="cloud4" type="Sprite2D" parent="parallax2d4/Clouds" unique_id=1956711931]
-position = Vector2(-41, -534)
-texture = ExtResource("12_vgh2n")
-
-[node name="cloud5" type="Sprite2D" parent="parallax2d4/Clouds" unique_id=653789416]
-position = Vector2(-194, -420)
-texture = ExtResource("13_3n6nx")
-
-[node name="cloud9" type="Sprite2D" parent="parallax2d4/Clouds" unique_id=1290483430]
-position = Vector2(-620, -301.00003)
-scale = Vector2(3.0400043, 3.0400043)
-texture = ExtResource("13_3n6nx")
-
-[node name="cloud6" type="Sprite2D" parent="parallax2d4/Clouds" unique_id=1016024511]
-position = Vector2(-432, -403)
-scale = Vector2(0.8370341, 0.8370341)
-texture = ExtResource("14_eyxai")
-
-[node name="cloud7" type="Sprite2D" parent="parallax2d4/Clouds" unique_id=1818360679]
-position = Vector2(106, -486)
-texture = ExtResource("14_eyxai")
-
-[node name="cloud8" type="Sprite2D" parent="parallax2d4/Clouds" unique_id=94168443]
-position = Vector2(-286, -534)
-scale = Vector2(0.52388847, 0.52388847)
-texture = ExtResource("14_eyxai")
+[node name="clouds2" parent="parallax2d4" unique_id=1208995173 instance=ExtResource("11_clro1")]
+modulate = Color(1, 1, 1, 0.8980392)
+position = Vector2(-96, -804)
+metadata/Scale = 0.9
+metadata/Speed = 10.0
+metadata/Gap = 150.0
+metadata/Left = -500.0
+metadata/Right = 3000.0
 
 [node name="birds3" type="Sprite2D" parent="parallax2d4" unique_id=601814153]
 position = Vector2(-357.14282, -403.57144)

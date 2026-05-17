@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dwedkcrc4b3mx" path="res://assets/overworld/water/worldTiles.png" id="2_efxa6"]
 [ext_resource type="Texture2D" uid="uid://wb0uc1bmnnt2" path="res://assets/overworld/Tree2.png" id="2_vivmo"]
 [ext_resource type="Texture2D" uid="uid://cgi7p3vaopj88" path="res://assets/overworld/BG Dirt2.png" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://k5dq35qmdyjl" path="res://assets/horse.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://didh77gqkavor" path="res://assets/horse/horse.tscn" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://c6dfpbbueaerg" path="res://camera.gd" id="4_lquwl"]
 [ext_resource type="Texture2D" uid="uid://dxuc45t3fkev4" path="res://assets/overworld/water/GandalfHardcore Water Tiles sheet.png" id="5_dg77c"]
 [ext_resource type="Texture2D" uid="uid://e7n684xt0mu3" path="res://assets/overworld/Floor Tiles1.png" id="6_ycdy4"]
@@ -20,7 +20,6 @@
 [ext_resource type="Texture2D" uid="uid://82lmt4xqdi6n" path="res://assets/overworld/Boat.png" id="19_cegan"]
 [ext_resource type="Script" uid="uid://bxtspabjxfmlk" path="res://assets/npc.gd" id="20_82xsv"]
 [ext_resource type="PackedScene" uid="uid://cmcsvkfqjhs5y" path="res://assets/character/character.tscn" id="20_getpj"]
-[ext_resource type="Texture2D" uid="uid://bpgllf6lqbjkg" path="res://assets/ui/dropdown menu.png" id="21_getpj"]
 
 [sub_resource type="TileSet" id="TileSet_cegan"]
 tile_size = Vector2i(32, 32)
@@ -928,8 +927,6 @@ animations = [{
 "speed": 5.0
 }]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_82xsv"]
-
 [node name="main" type="Node2D" unique_id=2042244770]
 
 [node name="background" parent="." unique_id=371353526 instance=ExtResource("1_ryguw")]
@@ -969,6 +966,13 @@ tile_set = SubResource("TileSet_d13ii")
 rendering_quadrant_size = 32
 navigation_enabled = false
 
+[node name="camera" type="Camera2D" parent="." unique_id=479032482]
+position = Vector2(-128, -87)
+scale = Vector2(0.101, 1)
+zoom = Vector2(4.98, 4.98)
+rotation_smoothing_enabled = true
+script = ExtResource("4_lquwl")
+
 [node name="horse" parent="." unique_id=1617813754 instance=ExtResource("4_1bvp3")]
 position = Vector2(-144, 0)
 
@@ -980,72 +984,3 @@ frame_progress = 0.9059242
 script = ExtResource("20_82xsv")
 
 [node name="character" parent="." unique_id=1980402342 instance=ExtResource("20_getpj")]
-position = Vector2(2, -1)
-
-[node name="camera" type="Camera2D" parent="." unique_id=479032482]
-position = Vector2(-111, -97)
-zoom = Vector2(4.34, 4.34)
-rotation_smoothing_enabled = true
-script = ExtResource("4_lquwl")
-
-[node name="control" type="Control" parent="camera" unique_id=883355864]
-layout_direction = 2
-layout_mode = 3
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="hFlowContainer" type="HFlowContainer" parent="camera/control" unique_id=927068134]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -232.0
-offset_top = -148.0
-offset_right = 536.0
-offset_bottom = 284.0
-grow_horizontal = 0
-grow_vertical = 0
-scale = Vector2(0.5, 0.5)
-
-[node name="switchButton" type="Button" parent="camera/control/hFlowContainer" unique_id=528636525]
-layout_mode = 2
-text = "switch"
-autowrap_trim_flags = 0
-icon_alignment = 1
-
-[node name="menuBar" type="MenuBar" parent="camera" unique_id=893123671]
-offset_left = -970.2969
-offset_top = -33.0
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="dropdownMenu2" type="Sprite2D" parent="camera" unique_id=1534801829]
-position = Vector2(180, 109)
-rotation = -1.5707964
-texture = ExtResource("21_getpj")
-region_enabled = true
-region_rect = Rect2(63, 1, 15, 15)
-
-[node name="dropdownMenu" type="Sprite2D" parent="camera" unique_id=1168073773]
-position = Vector2(203, 109)
-rotation = 1.5707964
-texture = ExtResource("21_getpj")
-region_enabled = true
-region_rect = Rect2(63, 1, 15, 15)
-
-[node name="touchScreenButton" type="TouchScreenButton" parent="camera" unique_id=2010560842]
-top_level = true
-position = Vector2(203, 109)
-shape = SubResource("RectangleShape2D_82xsv")
-shape_visible = false
-action = "ui_right"
-
-[node name="touchScreenButton2" type="TouchScreenButton" parent="camera" unique_id=306870236]
-top_level = true
-position = Vector2(180, 109)
-shape = SubResource("RectangleShape2D_82xsv")
-shape_visible = false
-action = "ui_left"
