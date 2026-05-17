@@ -7,4 +7,3 @@ script = ExtResource("1_hh1sy")
 
 [node name="sprite2d" type="Sprite2D" parent="." unique_id=238104742]
 position = Vector2(3, -1)
-metadata/Src = null

@@ -428,6 +428,7 @@ animations = [{
 }]
 
 [node name="horse" type="Node2D" unique_id=1617813754]
+position = Vector2(2, 0)
 script = SubResource("GDScript_66ftv")
 metadata/camera_follow = false
 

@@ -1038,14 +1038,14 @@ region_rect = Rect2(63, 1, 15, 15)
 
 [node name="touchScreenButton" type="TouchScreenButton" parent="camera" unique_id=2010560842]
 top_level = true
-position = Vector2(203, 109)
+position = Vector2(92, 12)
 shape = SubResource("RectangleShape2D_82xsv")
 shape_visible = false
 action = "ui_right"
 
 [node name="touchScreenButton2" type="TouchScreenButton" parent="camera" unique_id=306870236]
 top_level = true
-position = Vector2(180, 109)
+position = Vector2(69, 12)
 shape = SubResource("RectangleShape2D_82xsv")
 shape_visible = false
 action = "ui_left"
