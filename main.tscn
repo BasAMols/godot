@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://dwedkcrc4b3mx" path="res://assets/overworld/water/worldTiles.png" id="2_efxa6"]
 [ext_resource type="Texture2D" uid="uid://wb0uc1bmnnt2" path="res://assets/overworld/Tree2.png" id="2_vivmo"]
 [ext_resource type="Texture2D" uid="uid://cgi7p3vaopj88" path="res://assets/overworld/BG Dirt2.png" id="3_h2yge"]
-[ext_resource type="PackedScene" uid="uid://k5dq35qmdyjl" path="res://assets/horse.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://k5dq35qmdyjl" path="res://assets/horse/horse.tscn" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://c6dfpbbueaerg" path="res://camera.gd" id="4_lquwl"]
 [ext_resource type="Texture2D" uid="uid://dxuc45t3fkev4" path="res://assets/overworld/water/GandalfHardcore Water Tiles sheet.png" id="5_dg77c"]
 [ext_resource type="Texture2D" uid="uid://e7n684xt0mu3" path="res://assets/overworld/Floor Tiles1.png" id="6_ycdy4"]
