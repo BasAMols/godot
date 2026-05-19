@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://bo5tjskr7185k"]
+
+[ext_resource type="Script" uid="uid://c6dfpbbueaerg" path="res://camera.gd" id="1_diie0"]
+[ext_resource type="Script" uid="uid://dssa7udrtct6s" path="res://switch_button.gd" id="2_p6dlx"]
+[ext_resource type="Texture2D" uid="uid://bpgllf6lqbjkg" path="res://assets/ui/dropdown menu.png" id="2_qqjab"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_82xsv"]
+
+[node name="camera" type="Camera2D" unique_id=1333406191]
+zoom = Vector2(4.34, 4.34)
+rotation_smoothing_enabled = true
+script = ExtResource("1_diie0")
+
+[node name="control" type="Control" parent="." unique_id=110526488]
+layout_direction = 2
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="hFlowContainer" type="HFlowContainer" parent="control" unique_id=72886847]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -232.0
+offset_top = -148.0
+offset_right = 536.0
+offset_bottom = 284.0
+grow_horizontal = 0
+grow_vertical = 0
+scale = Vector2(0.5, 0.5)
+
+[node name="switchButton" type="Button" parent="control/hFlowContainer" unique_id=400665831 node_paths=PackedStringArray("camera")]
+layout_mode = 2
+text = "switch"
+autowrap_trim_flags = 0
+icon_alignment = 1
+script = ExtResource("2_p6dlx")
+camera = NodePath("../../..")
+
+[node name="menuBar" type="MenuBar" parent="." unique_id=1498370647]
+offset_left = -970.2969
+offset_top = -33.0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="dropdownMenu2" type="Sprite2D" parent="." unique_id=53519921]
+position = Vector2(180, 109)
+rotation = -1.5707964
+texture = ExtResource("2_qqjab")
+region_enabled = true
+region_rect = Rect2(63, 1, 15, 15)
+
+[node name="dropdownMenu" type="Sprite2D" parent="." unique_id=266751275]
+position = Vector2(203, 109)
+rotation = 1.5707964
+texture = ExtResource("2_qqjab")
+region_enabled = true
+region_rect = Rect2(63, 1, 15, 15)
+
+[node name="touchScreenButton" type="TouchScreenButton" parent="." unique_id=1985095643]
+top_level = true
+position = Vector2(92, 12)
+shape = SubResource("RectangleShape2D_82xsv")
+shape_visible = false
+action = "ui_right"
+
+[node name="touchScreenButton2" type="TouchScreenButton" parent="." unique_id=194982457]
+top_level = true
+position = Vector2(69, 12)
+shape = SubResource("RectangleShape2D_82xsv")
+shape_visible = false
+action = "ui_left"
