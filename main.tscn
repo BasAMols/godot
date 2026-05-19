@@ -3,8 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://dieb65bpch6f6" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/background.tscn" id="1_ryguw"]
 [ext_resource type="Texture2D" uid="uid://wb0uc1bmnnt2" path="res://assets/overworld/Tree2.png" id="2_vivmo"]
 [ext_resource type="PackedScene" uid="uid://k5dq35qmdyjl" path="res://assets/horse/horse.tscn" id="4_1bvp3"]
-[ext_resource type="PackedScene" uid="uid://dsblkoilvqgg7" path="res://tiles.tscn" id="5_4c57u"]
-[ext_resource type="PackedScene" uid="uid://bo5tjskr7185k" path="res://camera.tscn" id="10_efxa6"]
+[ext_resource type="Script" uid="uid://c6dfpbbueaerg" path="res://camera.gd" id="4_lquwl"]
+[ext_resource type="PackedScene" path="res://tiles.tscn" id="5_4c57u"]
+[ext_resource type="Script" uid="uid://dssa7udrtct6s" path="res://switch_button.gd" id="11_efxa6"]
 [ext_resource type="Texture2D" uid="uid://c1wtdod55nl0w" path="res://assets/overworld/Weeping Willow1.png" id="14_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://burospdvod1ta" path="res://assets/overworld/Tree1.png" id="15_yaehf"]
 [ext_resource type="Texture2D" uid="uid://82lmt4xqdi6n" path="res://assets/overworld/Boat.png" id="19_cegan"]
@@ -89,12 +90,34 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Theme" id="Theme_efxa6"]
+
+[sub_resource type="SystemFont" id="SystemFont_efxa6"]
+font_weight = 125
+
 [node name="main" type="Node2D" unique_id=2042244770]
+
+[node name="camera" type="Camera2D" parent="." unique_id=1333406191 node_paths=PackedStringArray("targets")]
+position = Vector2(-111, -97)
+zoom = Vector2(4.015, 4.015)
+limit_left = -404
+limit_top = -9999996
+limit_right = 859
+limit_bottom = 10000004
+limit_smoothed = true
+position_smoothing_enabled = true
+position_smoothing_speed = 7.965
+drag_horizontal_enabled = true
+drag_left_margin = 0.1
+drag_top_margin = 0.1
+editor_draw_limits = true
+script = ExtResource("4_lquwl")
+targets = [NodePath("../game/character"), NodePath("../game/horse")]
 
 [node name="game" type="Node2D" parent="." unique_id=1468135139]
 
 [node name="parralax" parent="game" unique_id=371353526 instance=ExtResource("1_ryguw")]
-position = Vector2(-152, -17)
+position = Vector2(-149, -20)
 scale = Vector2(0.3626304, 0.3626304)
 
 [node name="tree2" type="Sprite2D" parent="game" unique_id=697945188]
@@ -124,6 +147,20 @@ position = Vector2(2, -1)
 [node name="horse" parent="game" unique_id=1617813754 instance=ExtResource("4_1bvp3")]
 position = Vector2(-144, 0)
 
-[node name="camera" parent="." unique_id=1333406191 node_paths=PackedStringArray("targets") instance=ExtResource("10_efxa6")]
-position = Vector2(-111, -97)
-targets = [NodePath("../game/character"), NodePath("../game/horse")]
+[node name="Hud" type="CanvasLayer" parent="." unique_id=327140895]
+
+[node name="switchButton2" type="Button" parent="Hud" unique_id=1234969779 node_paths=PackedStringArray("camera")]
+offset_left = 9.0
+offset_top = 9.0
+offset_right = 68.0
+offset_bottom = 40.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = SubResource("Theme_efxa6")
+theme_override_fonts/font = SubResource("SystemFont_efxa6")
+theme_override_font_sizes/font_size = 45
+text = "Switch"
+autowrap_trim_flags = 0
+icon_alignment = 1
+script = ExtResource("11_efxa6")
+camera = NodePath("../../camera")

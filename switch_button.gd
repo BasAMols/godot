@@ -9,9 +9,7 @@ func _ready() -> void:
 		set_process(false)
 
 	pressed.connect(_button_pressed)
-	text = "1"
 
 
 func _button_pressed() -> void:
 	var index = camera.cycle_follow_target()
-	text = str(index + 1)

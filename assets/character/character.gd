@@ -3,13 +3,12 @@ extends Node2D
 var outfit: AnimatedSprite2D = null
 var hat: AnimatedSprite2D = null
 
-var speed = 60
 var direction = 1
 var velocity = 0
-var sprintMultiplier = 3
-
-var deceleration = 0.4
-var acceleration = 0.2
+@export var speed = 60
+@export var sprintMultiplier = 3
+@export var deceleration = 0.4
+@export var acceleration = 0.2
 var single_animation: String = ""
 var hold_animation: String = ""
 
@@ -37,8 +36,8 @@ func _process(delta):
 		velocity = 0
 		return
 
-	deceleration = 0.4 * delta * 10
-	acceleration = 0.2 * delta * 10
+	var dec = deceleration * delta * 10
+	var acc = acceleration * delta * 10
 
 	if Input.is_action_pressed("attack"):
 		trigger_hold("sword_attack")
@@ -49,28 +48,28 @@ func _process(delta):
 
 	var sprint: bool = Input.is_action_pressed("shift")
 	if sprint:
-		acceleration *= sprintMultiplier
-		deceleration *= sprintMultiplier
+		acc *= sprintMultiplier
+		dec *= sprintMultiplier
 
 	if Input.is_action_pressed("ui_left") and not Input.is_action_pressed("ui_right") and hold_animation == "":
 		direction = -1
 		if (velocity > 0 || (velocity < -1 and not sprint)):
-			velocity = clamp(velocity - deceleration, -sprintMultiplier, sprintMultiplier)
+			velocity = clamp(velocity - dec, -sprintMultiplier, sprintMultiplier)
 		else:
-			velocity = clamp(velocity - acceleration, -sprintMultiplier, sprintMultiplier)
+			velocity = clamp(velocity - acc, -sprintMultiplier, sprintMultiplier)
 
 	elif Input.is_action_pressed("ui_right") and not Input.is_action_pressed("ui_left") and hold_animation == "":
 		direction = 1
 		if (velocity < 0 || (velocity > 1 and not sprint)):
-			velocity = clamp(velocity + deceleration, -sprintMultiplier, sprintMultiplier)
+			velocity = clamp(velocity + dec, -sprintMultiplier, sprintMultiplier)
 		else:
-			velocity = clamp(velocity + acceleration, -sprintMultiplier, sprintMultiplier)
+			velocity = clamp(velocity + acc, -sprintMultiplier, sprintMultiplier)
 
 	else:
 		if (velocity < 0 ):
-			velocity = clamp(velocity + deceleration, -sprintMultiplier, 0)
+			velocity = clamp(velocity + dec, -sprintMultiplier, 0)
 		elif (velocity > 0):
-			velocity = clamp(velocity - deceleration, 0, sprintMultiplier)
+			velocity = clamp(velocity - dec, 0, sprintMultiplier)
 
 	if not sprint:
 		velocity = clamp(velocity, -1, 1)
