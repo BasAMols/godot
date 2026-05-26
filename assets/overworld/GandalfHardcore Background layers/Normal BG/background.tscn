@@ -16,9 +16,9 @@
 
 [node name="parallax2d" type="Parallax2D" parent="." unique_id=2086967042]
 scroll_scale = Vector2(0, 1)
-scroll_offset = Vector2(-2, -24)
+scroll_offset = Vector2(0, -129)
 repeat_size = Vector2(1024, 0)
-repeat_times = 20
+repeat_times = 8
 
 [node name="colorRect2" type="ColorRect" parent="parallax2d" unique_id=581066558]
 offset_left = -339.0
@@ -34,9 +34,9 @@ texture = ExtResource("1_eq6nc")
 
 [node name="parallax2d2" type="Parallax2D" parent="." unique_id=1451793266]
 scroll_scale = Vector2(0.02, 1)
-scroll_offset = Vector2(-1014, -144)
+scroll_offset = Vector2(0, -160)
 repeat_size = Vector2(1024, 0)
-repeat_times = 20
+repeat_times = 10
 
 [node name="gandalfHardcoreBackgroundLayersLayer4" type="Sprite2D" parent="parallax2d2" unique_id=1027585436]
 position = Vector2(155, -210)
@@ -44,8 +44,7 @@ texture = ExtResource("2_bpugw")
 
 [node name="parallax2d4" type="Parallax2D" parent="." unique_id=1215641330]
 scroll_scale = Vector2(0.15, 1)
-scroll_offset = Vector2(442, -138)
-repeat_times = 20
+scroll_offset = Vector2(0, -176)
 
 [node name="backgroundCastle" type="Sprite2D" parent="parallax2d4" unique_id=126682521]
 position = Vector2(2674.9998, -21)
@@ -54,12 +53,12 @@ texture = ExtResource("2_akd5k")
 
 [node name="clouds" parent="parallax2d4" unique_id=1479339058 instance=ExtResource("11_clro1")]
 modulate = Color(1, 1, 1, 0.8235294)
-position = Vector2(-435, -375)
+position = Vector2(-2497, -375)
 metadata/Scale = 0.7
 metadata/Speed = 3.0
 metadata/Gap = 100.0
 metadata/Left = -500.0
-metadata/Right = 3000.0
+metadata/Right = 4000.0
 
 [node name="hotAirBalloon" type="Sprite2D" parent="parallax2d4" unique_id=1725100536]
 position = Vector2(1182, -349)
@@ -68,12 +67,12 @@ texture = ExtResource("4_yi75v")
 
 [node name="clouds2" parent="parallax2d4" unique_id=1208995173 instance=ExtResource("11_clro1")]
 modulate = Color(1, 1, 1, 0.8980392)
-position = Vector2(-96, -804)
+position = Vector2(-2079, -285)
 metadata/Scale = 0.9
 metadata/Speed = 10.0
 metadata/Gap = 150.0
 metadata/Left = -500.0
-metadata/Right = 3000.0
+metadata/Right = 4000.0
 
 [node name="birds3" type="Sprite2D" parent="parallax2d4" unique_id=601814153]
 position = Vector2(-357.14282, -403.57144)
@@ -91,9 +90,9 @@ metadata/Speed = 5.0
 
 [node name="parallax2d7" type="Parallax2D" parent="." unique_id=1934738674]
 scroll_scale = Vector2(0.4, 1)
-scroll_offset = Vector2(-908, -163)
+scroll_offset = Vector2(0, -176)
 repeat_size = Vector2(1024, 0)
-repeat_times = 5
+repeat_times = 8
 
 [node name="gandalfHardcoreBackgroundLayersLayer3" type="Sprite2D" parent="parallax2d7" unique_id=246930313]
 position = Vector2(78, -165)
@@ -101,9 +100,9 @@ texture = ExtResource("3_gjjrj")
 
 [node name="parallax2d5" type="Parallax2D" parent="." unique_id=962164008]
 scroll_scale = Vector2(0.6, 1)
-scroll_offset = Vector2(-968, -134)
+scroll_offset = Vector2(0, -163)
 repeat_size = Vector2(1024, 0)
-repeat_times = 20
+repeat_times = 8
 
 [node name="gandalfHardcoreBackgroundLayersLayer2" type="Sprite2D" parent="parallax2d5" unique_id=353596968]
 position = Vector2(195, -149)
@@ -112,9 +111,9 @@ texture = ExtResource("4_vvxqx")
 [node name="parallax2d3" type="Parallax2D" parent="." unique_id=463344576]
 visibility_layer = 3
 scroll_scale = Vector2(0.7, 1)
-scroll_offset = Vector2(-1529, -88)
+scroll_offset = Vector2(0, -139)
 repeat_size = Vector2(1536, 0)
-repeat_times = 20
+repeat_times = 4
 
 [node name="gandalfHardcoreBackgroundLayersLayer1" type="Sprite2D" parent="parallax2d3" unique_id=1350866062]
 position = Vector2(149, -119)
@@ -124,9 +123,9 @@ texture = ExtResource("5_cdpnt")
 [node name="parallax2d6" type="Parallax2D" parent="." unique_id=1697030508]
 modulate = Color(0.751461, 0.7514611, 0.7514607, 1)
 scroll_scale = Vector2(0.9, 1)
-scroll_offset = Vector2(-24, -90)
+scroll_offset = Vector2(0, -83)
 repeat_size = Vector2(2048, 0)
-repeat_times = 20
+repeat_times = 3
 
 [node name="gandalfHardcoreBackgroundLayersLayer1" type="Sprite2D" parent="parallax2d6" unique_id=2025431174]
 position = Vector2(205, -87)

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://c7a4cxrlkmsb"]
+
+[ext_resource type="SpriteFrames" uid="uid://bfryl4lwh8qvr" path="res://assets/spider/spider.tres" id="1_k2oah"]
+
+[node name="spider" type="Node2D" unique_id=215854087]
+
+[node name="spiderAnimation" type="AnimatedSprite2D" parent="." unique_id=1272166561]
+sprite_frames = ExtResource("1_k2oah")
+animation = &"idle"
+autoplay = "idle"

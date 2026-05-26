@@ -23,4 +23,4 @@ func cycle_follow_target() -> int:
 	return current_index
 
 func _process(_delta: float) -> void:
-	global_position.x = follow.global_position.x
+	global_position = follow.global_position

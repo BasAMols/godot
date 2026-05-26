@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://cdvxqh8kjeqcs"]
+
+[node name="table" type="Node2D" unique_id=343454408]
+
+[node name="camera2d" type="Camera2D" parent="." unique_id=913162457]
+
+[node name="colorRect" type="ColorRect" parent="." unique_id=1936626854]
+offset_right = 180.0
+offset_bottom = 90.0
+color = Color(0.44918036, 0.3968131, 0.34877217, 1)

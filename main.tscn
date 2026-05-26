@@ -5,7 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://k5dq35qmdyjl" path="res://assets/horse/horse.tscn" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://c6dfpbbueaerg" path="res://camera.gd" id="4_lquwl"]
 [ext_resource type="PackedScene" path="res://tiles.tscn" id="5_4c57u"]
+[ext_resource type="PackedScene" uid="uid://cxofmac272hga" path="res://assets/carriage/carriage.tscn" id="7_dg77c"]
 [ext_resource type="Script" uid="uid://dssa7udrtct6s" path="res://switch_button.gd" id="11_efxa6"]
+[ext_resource type="PackedScene" uid="uid://il31uvvc8ur1" path="res://assets/carriage/driver.tscn" id="12_ycdy4"]
 [ext_resource type="Texture2D" uid="uid://c1wtdod55nl0w" path="res://assets/overworld/Weeping Willow1.png" id="14_2cqfq"]
 [ext_resource type="Texture2D" uid="uid://burospdvod1ta" path="res://assets/overworld/Tree1.png" id="15_yaehf"]
 [ext_resource type="Texture2D" uid="uid://82lmt4xqdi6n" path="res://assets/overworld/Boat.png" id="19_cegan"]
@@ -100,15 +102,15 @@ font_weight = 125
 [node name="camera" type="Camera2D" parent="." unique_id=1333406191 node_paths=PackedStringArray("targets")]
 position = Vector2(-111, -97)
 zoom = Vector2(4.015, 4.015)
-limit_left = -404
-limit_top = -9999996
-limit_right = 859
-limit_bottom = 10000004
+limit_left = -397
+limit_top = -364
+limit_right = 894
+limit_bottom = 42
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 7.965
 drag_horizontal_enabled = true
-drag_left_margin = 0.1
+drag_left_margin = 0.12
 drag_top_margin = 0.1
 editor_draw_limits = true
 script = ExtResource("4_lquwl")
@@ -117,7 +119,7 @@ targets = [NodePath("../game/character"), NodePath("../game/horse")]
 [node name="game" type="Node2D" parent="." unique_id=1468135139]
 
 [node name="parralax" parent="game" unique_id=371353526 instance=ExtResource("1_ryguw")]
-position = Vector2(-149, -20)
+position = Vector2(426, -20)
 scale = Vector2(0.3626304, 0.3626304)
 
 [node name="tree2" type="Sprite2D" parent="game" unique_id=697945188]
@@ -134,18 +136,28 @@ texture = ExtResource("15_yaehf")
 
 [node name="tiles" parent="game" unique_id=101451251 instance=ExtResource("5_4c57u")]
 
+[node name="carriage" parent="game" unique_id=601543272 instance=ExtResource("7_dg77c")]
+position = Vector2(-165, -48)
+
 [node name="boat" type="AnimatedSprite2D" parent="game" unique_id=471188429]
-position = Vector2(730, 1)
+position = Vector2(734, -5)
 sprite_frames = SubResource("SpriteFrames_kq58d")
 animation = &"Idle"
 frame_progress = 0.9059242
 script = ExtResource("20_82xsv")
 
+[node name="horse" parent="game" unique_id=1617813754 instance=ExtResource("4_1bvp3")]
+position = Vector2(510, 0)
+
+[node name="horse2" parent="game" unique_id=262837808 instance=ExtResource("4_1bvp3")]
+position = Vector2(613, 0)
+direction = -1
+
+[node name="driver" parent="game" unique_id=226427704 instance=ExtResource("12_ycdy4")]
+position = Vector2(298, 0)
+
 [node name="character" parent="game" unique_id=1980402342 instance=ExtResource("20_getpj")]
 position = Vector2(2, -1)
-
-[node name="horse" parent="game" unique_id=1617813754 instance=ExtResource("4_1bvp3")]
-position = Vector2(-144, 0)
 
 [node name="Hud" type="CanvasLayer" parent="." unique_id=327140895]
 

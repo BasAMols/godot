@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://cxofmac272hga"]
+
+[ext_resource type="SpriteFrames" uid="uid://ck6exgh1aqr3a" path="res://assets/carriage/back.tres" id="1_11vdx"]
+[ext_resource type="Texture2D" uid="uid://i3m6mfagnkkh" path="res://assets/carriage/assets/Carriage only 2.png" id="1_dmj1s"]
+[ext_resource type="SpriteFrames" uid="uid://ionmy2owy3ne" path="res://assets/carriage/overlay.tres" id="2_ya0qn"]
+[ext_resource type="PackedScene" uid="uid://il31uvvc8ur1" path="res://assets/carriage/driver.tscn" id="4_dmj1s"]
+
+[node name="carriage" type="Node2D" unique_id=601543272]
+
+[node name="horseless" type="Sprite2D" parent="." unique_id=1721727964]
+position = Vector2(-40, 0)
+texture = ExtResource("1_dmj1s")
+
+[node name="back" type="AnimatedSprite2D" parent="." unique_id=1165210094]
+visible = false
+sprite_frames = ExtResource("1_11vdx")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.21244442
+
+[node name="overlay" type="AnimatedSprite2D" parent="." unique_id=320681038]
+visible = false
+sprite_frames = ExtResource("2_ya0qn")
+animation = &"idle"
+autoplay = "idle"
+
+[node name="driver" parent="." unique_id=109053946 instance=ExtResource("4_dmj1s")]
+visible = false
+position = Vector2(17, 48)

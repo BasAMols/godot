@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://il31uvvc8ur1"]
+
+[ext_resource type="SpriteFrames" uid="uid://0btsya5q8j50" path="res://assets/carriage/driver.tres" id="1_r2i7y"]
+
+[node name="driver" type="Node2D" unique_id=226427704]
+
+[node name="driver" type="AnimatedSprite2D" parent="." unique_id=109053946]
+position = Vector2(0, -32)
+scale = Vector2(-1, 1)
+sprite_frames = ExtResource("1_r2i7y")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.5643829
