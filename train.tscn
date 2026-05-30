@@ -1,53 +1,44 @@
 [gd_scene format=3 uid="uid://c4hkqoe1gti15"]
 
-[ext_resource type="Texture2D" uid="uid://cgx6trusxyvh6" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 5.png" id="1_3ccrb"]
-[ext_resource type="Texture2D" uid="uid://bqjd5ay2x6b85" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 4.png" id="2_l5j6f"]
-[ext_resource type="Texture2D" uid="uid://mi4vv153ukjw" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 3.png" id="3_n14qy"]
-[ext_resource type="Texture2D" uid="uid://dmdk8omb0w2ij" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 2.png" id="4_h16vo"]
-[ext_resource type="Texture2D" uid="uid://bhv2kpex06rjq" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/GandalfHardcore Background layers_layer 1.png" id="5_isp7n"]
-[ext_resource type="Texture2D" uid="uid://bcjg631ltly73" path="res://assets/train.PNG" id="6_3ccrb"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_l5j6f"]
-atlas = ExtResource("6_3ccrb")
-region = Rect2(0, 0, 512, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_n14qy"]
-atlas = ExtResource("6_3ccrb")
-region = Rect2(512, 0, 512, 128)
+[ext_resource type="PackedScene" uid="uid://ic6cmj3mhtqw" path="res://river2.tscn" id="1_kfycv"]
+[ext_resource type="Texture2D" uid="uid://b11og53nnl5q5" path="res://assets/Train.png" id="6_l5j6f"]
+[ext_resource type="Texture2D" uid="uid://fbgh2vh75ju0" path="res://assets/Train 2.png" id="7_n14qy"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_h16vo"]
-atlas = ExtResource("6_3ccrb")
-region = Rect2(1024, 0, 512, 128)
+atlas = ExtResource("6_l5j6f")
+region = Rect2(0, 0, 485, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_isp7n"]
-atlas = ExtResource("6_3ccrb")
-region = Rect2(1536, 0, 512, 128)
+atlas = ExtResource("6_l5j6f")
+region = Rect2(485, 0, 485, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ewb8"]
-atlas = ExtResource("6_3ccrb")
-region = Rect2(0, 128, 512, 128)
+atlas = ExtResource("6_l5j6f")
+region = Rect2(970, 0, 485, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6fg1u"]
-atlas = ExtResource("6_3ccrb")
-region = Rect2(512, 128, 512, 128)
+atlas = ExtResource("6_l5j6f")
+region = Rect2(1455, 0, 485, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_7rou3"]
-atlas = ExtResource("6_3ccrb")
-region = Rect2(1024, 128, 512, 128)
+atlas = ExtResource("6_l5j6f")
+region = Rect2(0, 128, 485, 128)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_mvjya"]
-atlas = ExtResource("6_3ccrb")
-region = Rect2(1536, 128, 512, 128)
+atlas = ExtResource("6_l5j6f")
+region = Rect2(485, 128, 485, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7rx5"]
+atlas = ExtResource("6_l5j6f")
+region = Rect2(970, 128, 485, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gd4ni"]
+atlas = ExtResource("6_l5j6f")
+region = Rect2(1455, 128, 485, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_isp7n"]
 animations = [{
 "frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_l5j6f")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_n14qy")
-}, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_h16vo")
 }, {
@@ -65,67 +56,28 @@ animations = [{
 }, {
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_mvjya")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7rx5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gd4ni")
 }],
 "loop": true,
 "name": &"new_animation",
-"speed": 3.68
+"speed": 5.0
 }]
 
 [node name="node2d" type="Node2D" unique_id=1250648170]
 
+[node name="node2d" parent="." unique_id=1496198752 instance=ExtResource("1_kfycv")]
+position = Vector2(619, -175.99998)
+scale = Vector2(0.80135787, 0.80135787)
+
 [node name="camera2d" type="Camera2D" parent="." unique_id=791107273]
-position = Vector2(-12, -117)
+position = Vector2(-70, -105)
 offset = Vector2(0, -8.765)
 zoom = Vector2(3.97, 3.97)
-
-[node name="parallax2d2" type="Parallax2D" parent="." unique_id=596593660]
-scroll_offset = Vector2(-3, -1)
-repeat_size = Vector2(1024, 0)
-repeat_times = 3
-
-[node name="gandalfHardcoreBackgroundLayersLayer5" type="Sprite2D" parent="parallax2d2" unique_id=1417436825]
-position = Vector2(465, -92)
-texture = ExtResource("1_3ccrb")
-
-[node name="parallax2d" type="Parallax2D" parent="." unique_id=1563684516]
-scroll_offset = Vector2(-3, -1)
-repeat_size = Vector2(1024, 0)
-autoscroll = Vector2(30, 0)
-repeat_times = 3
-
-[node name="gandalfHardcoreBackgroundLayersLayer4" type="Sprite2D" parent="parallax2d" unique_id=754672592]
-position = Vector2(465, -92)
-texture = ExtResource("2_l5j6f")
-
-[node name="parallax2d3" type="Parallax2D" parent="." unique_id=145878083]
-scroll_offset = Vector2(-3, -1)
-repeat_size = Vector2(1024, 0)
-autoscroll = Vector2(100, 0)
-repeat_times = 3
-
-[node name="gandalfHardcoreBackgroundLayersLayer3" type="Sprite2D" parent="parallax2d3" unique_id=568224262]
-position = Vector2(465, -92)
-texture = ExtResource("3_n14qy")
-
-[node name="parallax2d4" type="Parallax2D" parent="." unique_id=370003419]
-scroll_offset = Vector2(-3, -1)
-repeat_size = Vector2(1024, 0)
-autoscroll = Vector2(150, 0)
-repeat_times = 3
-
-[node name="gandalfHardcoreBackgroundLayersLayer2" type="Sprite2D" parent="parallax2d4" unique_id=1882450205]
-position = Vector2(465, -92)
-texture = ExtResource("4_h16vo")
-
-[node name="parallax2d5" type="Parallax2D" parent="." unique_id=991866858]
-scroll_offset = Vector2(-3, -1)
-repeat_size = Vector2(1024, 0)
-autoscroll = Vector2(200, 0)
-repeat_times = 3
-
-[node name="gandalfHardcoreBackgroundLayersLayer1" type="Sprite2D" parent="parallax2d5" unique_id=1051751333]
-position = Vector2(465, -92)
-texture = ExtResource("5_isp7n")
 
 [node name="animatedSprite2d2" type="AnimatedSprite2D" parent="." unique_id=1271859320]
 light_mask = 0
@@ -135,7 +87,6 @@ position = Vector2(-8, -64)
 sprite_frames = SubResource("SpriteFrames_isp7n")
 animation = &"new_animation"
 autoplay = "new_animation"
-frame_progress = 0.009198038
 speed_scale = 3.0
 
 [node name="colorRect" type="ColorRect" parent="." unique_id=1435986912]
@@ -144,3 +95,11 @@ offset_right = 1645.0
 offset_bottom = 200.0
 scale = Vector2(0.7101971, 0.9297004)
 color = Color(0.15, 0.13987501, 0.109500006, 1)
+
+[node name="train2" type="Sprite2D" parent="." unique_id=2035881572]
+position = Vector2(426, -64)
+texture = ExtResource("7_n14qy")
+
+[node name="train3" type="Sprite2D" parent="." unique_id=1140851654]
+position = Vector2(808, -64)
+texture = ExtResource("7_n14qy")

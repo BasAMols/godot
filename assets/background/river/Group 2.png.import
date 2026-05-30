@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b11og53nnl5q5"
-path="res://.godot/imported/Train.png-859eeeb9bd2c0c88ad466b8dc81a9042.ctex"
+uid="uid://dnvc8c88jyh73"
+path="res://.godot/imported/Group 2.png-c85fd585aa11860390633b57b2db14bb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Train.png"
-dest_files=["res://.godot/imported/Train.png-859eeeb9bd2c0c88ad466b8dc81a9042.ctex"]
+source_file="res://assets/background/river/Group 2.png"
+dest_files=["res://.godot/imported/Group 2.png-c85fd585aa11860390633b57b2db14bb.ctex"]
 
 [params]
 

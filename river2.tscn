@@ -1,0 +1,101 @@
+[gd_scene format=3 uid="uid://ic6cmj3mhtqw"]
+
+[ext_resource type="Texture2D" uid="uid://cfy3bfhiefvof" path="res://assets/background/river/Layer 3.png" id="1_mx56w"]
+[ext_resource type="Texture2D" uid="uid://b7gohs2stg3q0" path="res://assets/background/river/Layer 20.png" id="2_6vqlt"]
+[ext_resource type="Texture2D" uid="uid://bil1o1sch3iqg" path="res://assets/background/river/Layer 15.png" id="4_jthd2"]
+[ext_resource type="Texture2D" uid="uid://coux7winrbtn7" path="res://assets/background/river/Layer 7.png" id="5_hji1g"]
+[ext_resource type="Texture2D" uid="uid://3gyglkmmyh8w" path="res://assets/background/river/Layer 4.png" id="6_51qbo"]
+[ext_resource type="Texture2D" uid="uid://dw3tlvbe1s6df" path="res://assets/background/river/Layer 5.png" id="7_i5afr"]
+[ext_resource type="Texture2D" uid="uid://dnvc8c88jyh73" path="res://assets/background/river/Group 2.png" id="8_rfbt2"]
+[ext_resource type="Texture2D" uid="uid://kpvx16tlukvv" path="res://assets/background/river/Group 3.png" id="9_l34w0"]
+[ext_resource type="Texture2D" uid="uid://ba76a6tgt47gk" path="res://assets/background/river/Group 2 - 2.png" id="10_rk40d"]
+
+[node name="node2d" type="Node2D" unique_id=1496198752]
+
+[node name="Layer1" type="Parallax2D" parent="." unique_id=1941147610]
+scroll_scale = Vector2(0.43, 1)
+scroll_offset = Vector2(-210, 64)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(3, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer1" unique_id=1719736218]
+position = Vector2(3, -13)
+texture = ExtResource("1_mx56w")
+
+[node name="Layer3" type="Parallax2D" parent="." unique_id=823205128]
+scroll_scale = Vector2(0.47, 1)
+scroll_offset = Vector2(-351, 43)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(10, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer3" unique_id=2046154429]
+texture = ExtResource("4_jthd2")
+
+[node name="Layer4" type="Parallax2D" parent="." unique_id=1492925447]
+scroll_scale = Vector2(0.47, 1)
+scroll_offset = Vector2(-367, 43)
+repeat_size = Vector2(2595, 0)
+autoscroll = Vector2(15, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer4" unique_id=46670271]
+texture = ExtResource("5_hji1g")
+
+[node name="Layer5" type="Parallax2D" parent="." unique_id=128752029]
+scroll_scale = Vector2(0.5, 1)
+scroll_offset = Vector2(-201, 50)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(30, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer5" unique_id=1865653195]
+texture = ExtResource("6_51qbo")
+
+[node name="Layer6" type="Parallax2D" parent="." unique_id=913352180]
+scroll_scale = Vector2(0.7, 1)
+scroll_offset = Vector2(-204, 51)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(50, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer6" unique_id=1781209480]
+texture = ExtResource("7_i5afr")
+
+[node name="Layer7" type="Parallax2D" parent="." unique_id=1908034501]
+scroll_scale = Vector2(0.8, 1)
+scroll_offset = Vector2(-210, 53)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(100, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer7" unique_id=1616811412]
+texture = ExtResource("8_rfbt2")
+
+[node name="layer21" type="Sprite2D" parent="Layer7" unique_id=1143526888]
+position = Vector2(15, 15)
+texture = ExtResource("9_l34w0")
+
+[node name="Layer10" type="Parallax2D" parent="." unique_id=1153279638]
+scroll_scale = Vector2(0.8, 1)
+scroll_offset = Vector2(-848, 29)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(111.005, 0)
+repeat_times = 3
+
+[node name="layer22" type="Sprite2D" parent="Layer10" unique_id=1277531073]
+position = Vector2(674, 4)
+texture = ExtResource("2_6vqlt")
+
+[node name="Layer9" type="Parallax2D" parent="." unique_id=407241505]
+scroll_scale = Vector2(0.95, 1)
+scroll_offset = Vector2(-190, 60)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(150, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer9" unique_id=577296857]
+position = Vector2(-18, 13)
+texture = ExtResource("10_rk40d")
+region_rect = Rect2(0, 151, 865, 101)

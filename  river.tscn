@@ -1,0 +1,100 @@
+[gd_scene format=3 uid="uid://ddnq3h1u2o1l5"]
+
+[ext_resource type="Texture2D" uid="uid://cfy3bfhiefvof" path="res://assets/background/river/Layer 3.png" id="1_m5uv8"]
+[ext_resource type="Texture2D" uid="uid://b7gohs2stg3q0" path="res://assets/background/river/Layer 20.png" id="2_bk4g1"]
+[ext_resource type="Texture2D" uid="uid://vrpdpvvro27h" path="res://assets/background/river/Layer 11.png" id="3_5t6n5"]
+[ext_resource type="Texture2D" uid="uid://bil1o1sch3iqg" path="res://assets/background/river/Layer 15.png" id="4_6rq8d"]
+[ext_resource type="Texture2D" uid="uid://coux7winrbtn7" path="res://assets/background/river/Layer 7.png" id="5_e6f4r"]
+[ext_resource type="Texture2D" uid="uid://3gyglkmmyh8w" path="res://assets/background/river/Layer 4.png" id="6_ie3jm"]
+[ext_resource type="Texture2D" uid="uid://dw3tlvbe1s6df" path="res://assets/background/river/Layer 5.png" id="7_nh8gl"]
+[ext_resource type="Texture2D" uid="uid://dnvc8c88jyh73" path="res://assets/background/river/Group 2.png" id="8_akqxa"]
+[ext_resource type="Texture2D" uid="uid://kpvx16tlukvv" path="res://assets/background/river/Group 3.png" id="9_v2f5j"]
+[ext_resource type="Texture2D" uid="uid://ba76a6tgt47gk" path="res://assets/background/river/Group 2 - 2.png" id="10_u5g51"]
+
+[node name="node2d" type="Node2D" unique_id=1496198752]
+
+[node name="Layer1" type="Parallax2D" parent="." unique_id=1941147610]
+scroll_scale = Vector2(0.43, 1)
+scroll_offset = Vector2(-827, -50)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(1.5, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer1" unique_id=1719736218]
+texture = ExtResource("1_m5uv8")
+
+[node name="Layer2" type="Parallax2D" parent="." unique_id=1246327846]
+scroll_scale = Vector2(0.48, 1)
+scroll_offset = Vector2(719, 3)
+
+[node name="layer20" type="Sprite2D" parent="Layer2" unique_id=187278369]
+texture = ExtResource("3_5t6n5")
+
+[node name="Layer3" type="Parallax2D" parent="." unique_id=823205128]
+scroll_scale = Vector2(0.47, 1)
+scroll_offset = Vector2(-363, 9)
+repeat_size = Vector2(865, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer3" unique_id=2046154429]
+position = Vector2(5, -5)
+texture = ExtResource("4_6rq8d")
+
+[node name="Layer4" type="Parallax2D" parent="." unique_id=1296677055]
+scroll_scale = Vector2(0.48, 1)
+scroll_offset = Vector2(718, 3)
+
+[node name="layer20" type="Sprite2D" parent="Layer4" unique_id=1156338367]
+texture = ExtResource("5_e6f4r")
+
+[node name="Layer5" type="Parallax2D" parent="." unique_id=128752029]
+scroll_scale = Vector2(0.5, 1)
+scroll_offset = Vector2(-430, 10)
+repeat_size = Vector2(865, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer5" unique_id=1865653195]
+texture = ExtResource("6_ie3jm")
+
+[node name="Layer6" type="Parallax2D" parent="." unique_id=913352180]
+scroll_scale = Vector2(0.7, 1)
+scroll_offset = Vector2(-506, 16)
+repeat_size = Vector2(865, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer6" unique_id=1781209480]
+texture = ExtResource("7_nh8gl")
+
+[node name="Layer7" type="Parallax2D" parent="." unique_id=1908034501]
+scroll_scale = Vector2(0.75, 1)
+scroll_offset = Vector2(-823, 11)
+repeat_size = Vector2(865, 0)
+repeat_times = 6
+
+[node name="layer20" type="Sprite2D" parent="Layer7" unique_id=1616811412]
+texture = ExtResource("8_akqxa")
+
+[node name="layer21" type="Sprite2D" parent="Layer7" unique_id=1143526888]
+position = Vector2(-864, -3)
+texture = ExtResource("9_v2f5j")
+
+[node name="Layer9" type="Parallax2D" parent="." unique_id=407241505]
+scroll_scale = Vector2(0.85, 1)
+scroll_offset = Vector2(-594, 5)
+repeat_size = Vector2(865, 0)
+repeat_times = 3
+
+[node name="layer15" type="Sprite2D" parent="Layer9" unique_id=1620425380]
+position = Vector2(801, -8)
+texture = ExtResource("2_bk4g1")
+
+[node name="Layer10" type="Parallax2D" parent="." unique_id=908843299]
+scroll_scale = Vector2(0.9, 1)
+scroll_offset = Vector2(-682, 13)
+repeat_size = Vector2(865, 0)
+repeat_times = 3
+
+[node name="layer20" type="Sprite2D" parent="Layer10" unique_id=1912219598]
+position = Vector2(-7, 33)
+texture = ExtResource("10_u5g51")
+region_rect = Rect2(0, 151, 865, 101)
