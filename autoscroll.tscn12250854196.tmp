@@ -1,0 +1,374 @@
+[gd_scene format=3 uid="uid://cbbelnj5o5f4c"]
+
+[ext_resource type="Script" uid="uid://ciaaymu5wnacm" path="res://parallaxParent.gd" id="1_cqqb6"]
+[ext_resource type="Texture2D" uid="uid://b1f5f7tj4451p" path="res://assets/background/river/Sky.png" id="1_hk0m7"]
+[ext_resource type="Texture2D" uid="uid://dp1rjh2xtatya" path="res://assets/background/river/TerrainFar.png" id="2_j5m4a"]
+[ext_resource type="Script" uid="uid://hai1ody82frf" path="res://parrallaxChild.gd" id="3_0n33v"]
+[ext_resource type="Texture2D" uid="uid://xh2xrnhqyw1j" path="res://assets/background/river/Mountain.png" id="3_cqqb6"]
+[ext_resource type="Texture2D" uid="uid://dlpv5wep3myys" path="res://assets/background/river/TerrainForrest.png" id="4_0n33v"]
+[ext_resource type="Texture2D" uid="uid://b7hyqc77v014w" path="res://assets/background/river/TerrainSand.png" id="5_7c3se"]
+[ext_resource type="Texture2D" uid="uid://ci1gqke6f64kb" path="res://assets/background/river/TerrainHill.png" id="6_oxfq2"]
+[ext_resource type="Texture2D" uid="uid://dfrrhp40m5ocl" path="res://assets/background/river/River.png" id="7_7elyp"]
+[ext_resource type="Texture2D" uid="uid://bychwis074qcy" path="res://assets/background/river/RiverFoam.png" id="8_rhjq2"]
+[ext_resource type="Texture2D" uid="uid://bva4ihh4oracl" path="res://assets/background/river/RiverBank.png" id="9_44wbf"]
+[ext_resource type="Texture2D" uid="uid://b6m04o2oivg4u" path="res://assets/background/river/TerrainForeground.png" id="10_wcwmt"]
+
+[node name="Parralax" type="Node2D" unique_id=1496198752]
+script = ExtResource("1_cqqb6")
+
+[node name="Sky" type="Parallax2D" parent="." unique_id=1941147610]
+scroll_offset = Vector2(0, -221)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(4.03, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 4.03
+
+[node name="colorRect2" type="ColorRect" parent="Sky" unique_id=1317017279]
+offset_left = 627.0
+offset_top = -511.0
+offset_right = 1492.0
+offset_bottom = 225.0
+color = Color(0.34901962, 0.6666667, 0.8, 1)
+
+[node name="layer20" type="Sprite2D" parent="Sky" unique_id=1719736218]
+modulate = Color(1, 1, 1, 0.7176471)
+position = Vector2(0, 108)
+texture = ExtResource("1_hk0m7")
+centered = false
+
+[node name="Forrest4" type="Parallax2D" parent="." unique_id=771886757]
+modulate = Color(1.6095817, 1.6095817, 1.6095817, 1)
+scroll_offset = Vector2(-214, 160)
+repeat_size = Vector2(216.25, 0)
+autoscroll = Vector2(7.035, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 7.035
+
+[node name="layer20" type="Sprite2D" parent="Forrest4" unique_id=2025472948]
+position = Vector2(0, -194)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_0n33v")
+centered = false
+
+[node name="FarFields" type="Parallax2D" parent="." unique_id=823205128]
+modulate = Color(1.2112623, 1.2112623, 1.2112623, 1)
+scroll_offset = Vector2(-2, 99)
+repeat_size = Vector2(519, 0)
+autoscroll = Vector2(10.995, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 10.995
+
+[node name="layer20" type="Sprite2D" parent="FarFields" unique_id=2046154429]
+position = Vector2(0, -173)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("2_j5m4a")
+centered = false
+script = ExtResource("3_0n33v")
+
+[node name="Mountain" type="Parallax2D" parent="." unique_id=1296677055]
+scroll_offset = Vector2(-854, -4)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(9.38, 0)
+repeat_times = 5
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 9.38
+
+[node name="layer20" type="Sprite2D" parent="Mountain" unique_id=1156338367]
+position = Vector2(0, -121)
+texture = ExtResource("3_cqqb6")
+centered = false
+script = ExtResource("3_0n33v")
+
+[node name="Forrest3" type="Parallax2D" parent="." unique_id=343992434]
+modulate = Color(1.5111723, 1.5111723, 1.5111723, 1)
+scroll_offset = Vector2(-426.5, 163)
+repeat_size = Vector2(432.5, 0)
+autoscroll = Vector2(16, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 16.0
+
+[node name="layer20" type="Sprite2D" parent="Forrest3" unique_id=1228427615]
+position = Vector2(0, -222.805)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("4_0n33v")
+centered = false
+
+[node name="Sky2" type="Parallax2D" parent="." unique_id=1969032815]
+modulate = Color(1, 1, 1, 0.15294118)
+scroll_offset = Vector2(0, -298)
+repeat_size = Vector2(1730, 0)
+autoscroll = Vector2(15.487, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 15.487
+
+[node name="colorRect2" type="ColorRect" parent="Sky2" unique_id=1167708009]
+offset_left = 627.0
+offset_top = -511.0
+offset_right = 2357.0
+offset_bottom = 225.0
+color = Color(0.34901962, 0.6666667, 0.8, 1)
+
+[node name="layer20" type="Sprite2D" parent="Sky2" unique_id=2013907327]
+modulate = Color(1, 1, 1, 0.7176471)
+position = Vector2(0, 108)
+scale = Vector2(2, 2)
+texture = ExtResource("1_hk0m7")
+centered = false
+
+[node name="FarFields2" type="Parallax2D" parent="." unique_id=2132757049]
+modulate = Color(1.0312251, 1.0312251, 1.0312251, 1)
+scroll_offset = Vector2(0, 3)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(24.185, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 24.185
+
+[node name="layer20" type="Sprite2D" parent="FarFields2" unique_id=160651573]
+position = Vector2(0, -126)
+texture = ExtResource("2_j5m4a")
+centered = false
+
+[node name="Forrest2" type="Parallax2D" parent="." unique_id=913352180]
+modulate = Color(1.4190066, 1.4190066, 1.4190066, 1)
+scroll_offset = Vector2(-1, 6)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(37.765, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 37.765
+
+[node name="layer20" type="Sprite2D" parent="Forrest2" unique_id=1781209480]
+position = Vector2(0, -121)
+texture = ExtResource("4_0n33v")
+centered = false
+
+[node name="Field" type="Parallax2D" parent="." unique_id=128752029]
+scroll_offset = Vector2(-4, 19)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(54.245, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 54.245
+
+[node name="layer20" type="Sprite2D" parent="Field" unique_id=1865653195]
+position = Vector2(0, -121)
+texture = ExtResource("5_7c3se")
+centered = false
+
+[node name="Sky3" type="Parallax2D" parent="." unique_id=1067827119]
+modulate = Color(1, 1, 1, 0.14509805)
+scroll_offset = Vector2(0, -148)
+repeat_size = Vector2(1730, 0)
+autoscroll = Vector2(43.95, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 43.95
+
+[node name="colorRect2" type="ColorRect" parent="Sky3" unique_id=1873699478]
+offset_left = 627.0
+offset_top = -511.0
+offset_right = 2357.0
+offset_bottom = 225.0
+color = Color(0.34901962, 0.6666667, 0.8, 1)
+
+[node name="layer20" type="Sprite2D" parent="Sky3" unique_id=1890974857]
+modulate = Color(1, 1, 1, 0.7176471)
+position = Vector2(0, 108)
+scale = Vector2(2, 2)
+texture = ExtResource("1_hk0m7")
+centered = false
+
+[node name="Forrest" type="Parallax2D" parent="." unique_id=58549765]
+modulate = Color(1.2904384, 1.2904384, 1.2904384, 1)
+scroll_offset = Vector2(0, 19)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(69.285, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 69.285
+
+[node name="layer20" type="Sprite2D" parent="Forrest" unique_id=1779850612]
+position = Vector2(0, -121)
+texture = ExtResource("4_0n33v")
+centered = false
+
+[node name="Hill2" type="Parallax2D" parent="." unique_id=1908034501]
+modulate = Color(1.3192172, 1.3192172, 1.3192172, 1)
+scroll_offset = Vector2(-7, 68)
+repeat_size = Vector2(605.5, 0)
+autoscroll = Vector2(85.45, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 85.45
+
+[node name="layer20" type="Sprite2D" parent="Hill2" unique_id=1616811412]
+position = Vector2(0, -121)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("6_oxfq2")
+centered = false
+
+[node name="Forrest5" type="Parallax2D" parent="." unique_id=1020650337]
+modulate = Color(0.85130984, 0.85130984, 0.85130984, 1)
+scroll_offset = Vector2(0, -3)
+repeat_size = Vector2(1297.5, 0)
+autoscroll = Vector2(100.54, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 100.54
+
+[node name="layer20" type="Sprite2D" parent="Forrest5" unique_id=2144924846]
+position = Vector2(0, -157)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_0n33v")
+centered = false
+
+[node name="Hill1" type="Parallax2D" parent="." unique_id=845174722]
+modulate = Color(1.1364014, 1.1364014, 1.1364014, 1)
+scroll_offset = Vector2(0, 55)
+repeat_size = Vector2(778.5, 0)
+autoscroll = Vector2(120.675, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 120.675
+
+[node name="layer20" type="Sprite2D" parent="Hill1" unique_id=1318966935]
+position = Vector2(0, -121)
+scale = Vector2(0.9, 0.9)
+texture = ExtResource("6_oxfq2")
+centered = false
+
+[node name="River" type="Parallax2D" parent="." unique_id=381311793]
+scroll_offset = Vector2(0, 30)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(130, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 130.0
+
+[node name="layer21" type="Sprite2D" parent="River" unique_id=1488931093]
+clip_children = 2
+position = Vector2(0, -121)
+texture = ExtResource("7_7elyp")
+centered = false
+
+[node name="RiverFoam1" type="Parallax2D" parent="." unique_id=332352064]
+modulate = Color(1, 1, 1, 0.49803922)
+scroll_offset = Vector2(0, 48)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(138, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 138.0
+
+[node name="layer21" type="Sprite2D" parent="RiverFoam1" unique_id=172667091]
+position = Vector2(0, -124)
+texture = ExtResource("8_rhjq2")
+centered = false
+
+[node name="RiverFoam2" type="Parallax2D" parent="." unique_id=308494771]
+modulate = Color(1, 1, 1, 0.29411766)
+scroll_offset = Vector2(0, 39)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(140, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 140.0
+
+[node name="layer21" type="Sprite2D" parent="RiverFoam2" unique_id=1921718602]
+position = Vector2(0, -124)
+texture = ExtResource("8_rhjq2")
+centered = false
+
+[node name="RiverBank" type="Parallax2D" parent="." unique_id=407241505]
+scroll_offset = Vector2(-1, 47)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(142.81, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 142.81
+
+[node name="layer15" type="Sprite2D" parent="RiverBank" unique_id=1620425380]
+position = Vector2(0, -129)
+texture = ExtResource("9_44wbf")
+centered = false
+
+[node name="RiverBank2" type="Parallax2D" parent="." unique_id=2071194409]
+scroll_offset = Vector2(-2, 38)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(180, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 180.0
+
+[node name="layer15" type="Sprite2D" parent="RiverBank2" unique_id=554143197]
+position = Vector2(0, -104.827)
+texture = ExtResource("9_44wbf")
+centered = false
+
+[node name="Foreground" type="Parallax2D" parent="." unique_id=908843299]
+modulate = Color(0.8792148, 0.8792148, 0.8792148, 1)
+scroll_offset = Vector2(0, 34)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(200, 0)
+repeat_times = 8
+follow_viewport = false
+ignore_camera_scroll = true
+script = ExtResource("3_0n33v")
+speed = 200.0
+
+[node name="layer20" type="Sprite2D" parent="Foreground" unique_id=1912219598]
+position = Vector2(-18.999998, -88)
+texture = ExtResource("10_wcwmt")
+centered = false
+region_rect = Rect2(0, 151, 865, 101)
+
+[node name="colorRect" type="ColorRect" parent="Foreground" unique_id=1913579956]
+offset_left = 393.0
+offset_top = 179.0
+offset_right = 1258.0
+offset_bottom = 915.0
+color = Color(0.08235294, 0.13333334, 0.20784314, 1)

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://coux7winrbtn7"
-path="res://.godot/imported/Layer 7.png-1242078d83eb95616a2feaded043c535.ctex"
+uid="uid://bva4ihh4oracl"
+path="res://.godot/imported/RiverBank.png-b17953e3e698055b9ef04e1df492acfe.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background/river/Layer 7.png"
-dest_files=["res://.godot/imported/Layer 7.png-1242078d83eb95616a2feaded043c535.ctex"]
+source_file="res://assets/background/river/RiverBank.png"
+dest_files=["res://.godot/imported/RiverBank.png-b17953e3e698055b9ef04e1df492acfe.ctex"]
 
 [params]
 

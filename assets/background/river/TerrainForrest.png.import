@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b3fvs8grx37p5"
-path="res://.godot/imported/Layer 1.png-9bfbb528ddcb57c4e3ae6e6488c84090.ctex"
+uid="uid://dlpv5wep3myys"
+path="res://.godot/imported/TerrainForrest.png-8e5964da48fe761e329cbe2b6a88bc42.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background/river/Layer 1.png"
-dest_files=["res://.godot/imported/Layer 1.png-9bfbb528ddcb57c4e3ae6e6488c84090.ctex"]
+source_file="res://assets/background/river/TerrainForrest.png"
+dest_files=["res://.godot/imported/TerrainForrest.png-8e5964da48fe761e329cbe2b6a88bc42.ctex"]
 
 [params]
 

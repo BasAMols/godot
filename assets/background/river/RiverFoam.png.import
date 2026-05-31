@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b7gohs2stg3q0"
-path="res://.godot/imported/Layer 20.png-96fd687a99be9454ef450aa2520a68fc.ctex"
+uid="uid://bychwis074qcy"
+path="res://.godot/imported/RiverFoam.png-d0a389462e21c666f64059e9519e1aa9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background/river/Layer 20.png"
-dest_files=["res://.godot/imported/Layer 20.png-96fd687a99be9454ef450aa2520a68fc.ctex"]
+source_file="res://assets/background/river/RiverFoam.png"
+dest_files=["res://.godot/imported/RiverFoam.png-d0a389462e21c666f64059e9519e1aa9.ctex"]
 
 [params]
 

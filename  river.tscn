@@ -1,100 +1,195 @@
 [gd_scene format=3 uid="uid://ddnq3h1u2o1l5"]
 
-[ext_resource type="Texture2D" uid="uid://cfy3bfhiefvof" path="res://assets/background/river/Layer 3.png" id="1_m5uv8"]
-[ext_resource type="Texture2D" uid="uid://b7gohs2stg3q0" path="res://assets/background/river/Layer 20.png" id="2_bk4g1"]
-[ext_resource type="Texture2D" uid="uid://vrpdpvvro27h" path="res://assets/background/river/Layer 11.png" id="3_5t6n5"]
-[ext_resource type="Texture2D" uid="uid://bil1o1sch3iqg" path="res://assets/background/river/Layer 15.png" id="4_6rq8d"]
-[ext_resource type="Texture2D" uid="uid://coux7winrbtn7" path="res://assets/background/river/Layer 7.png" id="5_e6f4r"]
-[ext_resource type="Texture2D" uid="uid://3gyglkmmyh8w" path="res://assets/background/river/Layer 4.png" id="6_ie3jm"]
-[ext_resource type="Texture2D" uid="uid://dw3tlvbe1s6df" path="res://assets/background/river/Layer 5.png" id="7_nh8gl"]
-[ext_resource type="Texture2D" uid="uid://dnvc8c88jyh73" path="res://assets/background/river/Group 2.png" id="8_akqxa"]
-[ext_resource type="Texture2D" uid="uid://kpvx16tlukvv" path="res://assets/background/river/Group 3.png" id="9_v2f5j"]
-[ext_resource type="Texture2D" uid="uid://ba76a6tgt47gk" path="res://assets/background/river/Group 2 - 2.png" id="10_u5g51"]
+[ext_resource type="Texture2D" uid="uid://b1f5f7tj4451p" path="res://assets/background/river/Sky.png" id="1_bk4g1"]
+[ext_resource type="Texture2D" uid="uid://dp1rjh2xtatya" path="res://assets/background/river/TerrainFar.png" id="3_6rq8d"]
+[ext_resource type="Texture2D" uid="uid://xh2xrnhqyw1j" path="res://assets/background/river/Mountain.png" id="4_e6f4r"]
+[ext_resource type="Texture2D" uid="uid://b7hyqc77v014w" path="res://assets/background/river/TerrainSand.png" id="5_ie3jm"]
+[ext_resource type="Texture2D" uid="uid://dlpv5wep3myys" path="res://assets/background/river/TerrainForrest.png" id="6_nh8gl"]
+[ext_resource type="Texture2D" uid="uid://ci1gqke6f64kb" path="res://assets/background/river/TerrainHill.png" id="7_akqxa"]
+[ext_resource type="Texture2D" uid="uid://dfrrhp40m5ocl" path="res://assets/background/river/River.png" id="8_v2f5j"]
+[ext_resource type="Texture2D" uid="uid://bychwis074qcy" path="res://assets/background/river/RiverFoam.png" id="9_u5g51"]
+[ext_resource type="Texture2D" uid="uid://bva4ihh4oracl" path="res://assets/background/river/RiverBank.png" id="10_8qbna"]
+[ext_resource type="Texture2D" uid="uid://b6m04o2oivg4u" path="res://assets/background/river/TerrainForeground.png" id="11_jvpwg"]
 
-[node name="node2d" type="Node2D" unique_id=1496198752]
+[node name="Parralax" type="Node2D" unique_id=1496198752]
 
-[node name="Layer1" type="Parallax2D" parent="." unique_id=1941147610]
-scroll_scale = Vector2(0.43, 1)
-scroll_offset = Vector2(-827, -50)
+[node name="Sky" type="Parallax2D" parent="." unique_id=1941147610]
+scroll_scale = Vector2(0, 1)
+scroll_offset = Vector2(-612, -221)
 repeat_size = Vector2(865, 0)
-autoscroll = Vector2(1.5, 0)
-repeat_times = 3
+autoscroll = Vector2(0.5, 0)
+repeat_times = 8
 
-[node name="layer20" type="Sprite2D" parent="Layer1" unique_id=1719736218]
-texture = ExtResource("1_m5uv8")
+[node name="colorRect2" type="ColorRect" parent="Sky" unique_id=1317017279]
+offset_left = 627.0
+offset_top = -511.0
+offset_right = 1492.0
+offset_bottom = 225.0
+color = Color(0.34901962, 0.6666667, 0.8, 1)
 
-[node name="Layer2" type="Parallax2D" parent="." unique_id=1246327846]
-scroll_scale = Vector2(0.48, 1)
-scroll_offset = Vector2(719, 3)
+[node name="layer20" type="Sprite2D" parent="Sky" unique_id=1719736218]
+modulate = Color(1, 1, 1, 0.7176471)
+position = Vector2(572, 188)
+texture = ExtResource("1_bk4g1")
 
-[node name="layer20" type="Sprite2D" parent="Layer2" unique_id=187278369]
-texture = ExtResource("3_5t6n5")
-
-[node name="Layer3" type="Parallax2D" parent="." unique_id=823205128]
-scroll_scale = Vector2(0.47, 1)
-scroll_offset = Vector2(-363, 9)
+[node name="FarFields" type="Parallax2D" parent="." unique_id=823205128]
+modulate = Color(0.9, 0.9, 0.9, 1)
+scroll_scale = Vector2(0.01, 1)
+scroll_offset = Vector2(-375, -4)
 repeat_size = Vector2(865, 0)
-repeat_times = 3
+repeat_times = 8
 
-[node name="layer20" type="Sprite2D" parent="Layer3" unique_id=2046154429]
+[node name="layer20" type="Sprite2D" parent="FarFields" unique_id=2046154429]
 position = Vector2(5, -5)
-texture = ExtResource("4_6rq8d")
+texture = ExtResource("3_6rq8d")
 
-[node name="Layer4" type="Parallax2D" parent="." unique_id=1296677055]
+[node name="Mountain" type="Parallax2D" parent="." unique_id=1296677055]
+scroll_scale = Vector2(0.1, 1)
+scroll_offset = Vector2(627, -1)
+
+[node name="layer20" type="Sprite2D" parent="Mountain" unique_id=1156338367]
+texture = ExtResource("4_e6f4r")
+
+[node name="Forrest3" type="Parallax2D" parent="." unique_id=343992434]
+modulate = Color(1.3745651, 1.3745651, 1.3745651, 1)
+scale = Vector2(0.54307485, 0.54307485)
+scroll_scale = Vector2(0.15, 1)
+scroll_offset = Vector2(-420, -11)
+repeat_size = Vector2(865, 0)
+repeat_times = 8
+
+[node name="layer20" type="Sprite2D" parent="Forrest3" unique_id=1228427615]
+texture = ExtResource("6_nh8gl")
+
+[node name="FarFields2" type="Parallax2D" parent="." unique_id=2132757049]
+modulate = Color(1.1008143, 1.1008143, 1.1008143, 1)
+scroll_scale = Vector2(0.25, 1)
+scroll_offset = Vector2(-239, 18)
+repeat_size = Vector2(865, 0)
+repeat_times = 8
+
+[node name="layer20" type="Sprite2D" parent="FarFields2" unique_id=160651573]
+position = Vector2(5, -5)
+texture = ExtResource("3_6rq8d")
+
+[node name="Forrest2" type="Parallax2D" parent="." unique_id=913352180]
+modulate = Color(1.2108967, 1.2108967, 1.2108967, 1)
+scroll_scale = Vector2(0.35, 1)
+scroll_offset = Vector2(-79, 8)
+repeat_size = Vector2(865, 0)
+repeat_times = 8
+
+[node name="layer20" type="Sprite2D" parent="Forrest2" unique_id=1781209480]
+texture = ExtResource("6_nh8gl")
+
+[node name="Field" type="Parallax2D" parent="." unique_id=128752029]
+scroll_scale = Vector2(0.4, 1)
+scroll_offset = Vector2(-455, 28)
+repeat_size = Vector2(865, 0)
+repeat_times = 8
+
+[node name="layer20" type="Sprite2D" parent="Field" unique_id=1865653195]
+texture = ExtResource("5_ie3jm")
+
+[node name="Forrest" type="Parallax2D" parent="." unique_id=58549765]
 scroll_scale = Vector2(0.48, 1)
-scroll_offset = Vector2(718, 3)
-
-[node name="layer20" type="Sprite2D" parent="Layer4" unique_id=1156338367]
-texture = ExtResource("5_e6f4r")
-
-[node name="Layer5" type="Parallax2D" parent="." unique_id=128752029]
-scroll_scale = Vector2(0.5, 1)
-scroll_offset = Vector2(-430, 10)
+scroll_offset = Vector2(-431, 22)
 repeat_size = Vector2(865, 0)
-repeat_times = 3
+repeat_times = 8
 
-[node name="layer20" type="Sprite2D" parent="Layer5" unique_id=1865653195]
-texture = ExtResource("6_ie3jm")
+[node name="layer20" type="Sprite2D" parent="Forrest" unique_id=1779850612]
+texture = ExtResource("6_nh8gl")
 
-[node name="Layer6" type="Parallax2D" parent="." unique_id=913352180]
-scroll_scale = Vector2(0.7, 1)
-scroll_offset = Vector2(-506, 16)
+[node name="Hill2" type="Parallax2D" parent="." unique_id=1908034501]
+modulate = Color(1.3322645, 1.3322645, 1.3322645, 1)
+scroll_scale = Vector2(0.55, 1)
+scroll_offset = Vector2(-809, 44)
 repeat_size = Vector2(865, 0)
-repeat_times = 3
+repeat_times = 8
 
-[node name="layer20" type="Sprite2D" parent="Layer6" unique_id=1781209480]
-texture = ExtResource("7_nh8gl")
+[node name="layer20" type="Sprite2D" parent="Hill2" unique_id=1616811412]
+texture = ExtResource("7_akqxa")
 
-[node name="Layer7" type="Parallax2D" parent="." unique_id=1908034501]
-scroll_scale = Vector2(0.75, 1)
-scroll_offset = Vector2(-823, 11)
+[node name="Hill1" type="Parallax2D" parent="." unique_id=845174722]
+modulate = Color(1.1364014, 1.1364014, 1.1364014, 1)
+scroll_scale = Vector2(0.6, 1)
+scroll_offset = Vector2(-537, 40)
 repeat_size = Vector2(865, 0)
-repeat_times = 6
+repeat_times = 8
 
-[node name="layer20" type="Sprite2D" parent="Layer7" unique_id=1616811412]
-texture = ExtResource("8_akqxa")
+[node name="layer20" type="Sprite2D" parent="Hill1" unique_id=1318966935]
+texture = ExtResource("7_akqxa")
 
-[node name="layer21" type="Sprite2D" parent="Layer7" unique_id=1143526888]
+[node name="River" type="Parallax2D" parent="." unique_id=381311793]
+scroll_scale = Vector2(0.6, 1)
+scroll_offset = Vector2(-242, 57)
+repeat_size = Vector2(865, 0)
+repeat_times = 8
+
+[node name="layer21" type="Sprite2D" parent="River" unique_id=1488931093]
+clip_children = 2
+position = Vector2(-865, 0)
+texture = ExtResource("8_v2f5j")
+
+[node name="RiverFoam1" type="Parallax2D" parent="." unique_id=332352064]
+modulate = Color(1, 1, 1, 0.49803922)
+scroll_scale = Vector2(0.63, 1)
+scroll_offset = Vector2(-21, 48)
+repeat_size = Vector2(865, 0)
+autoscroll = Vector2(8, 0)
+repeat_times = 8
+
+[node name="layer21" type="Sprite2D" parent="RiverFoam1" unique_id=172667091]
 position = Vector2(-864, -3)
-texture = ExtResource("9_v2f5j")
+texture = ExtResource("9_u5g51")
 
-[node name="Layer9" type="Parallax2D" parent="." unique_id=407241505]
-scroll_scale = Vector2(0.85, 1)
-scroll_offset = Vector2(-594, 5)
+[node name="RiverFoam2" type="Parallax2D" parent="." unique_id=308494771]
+modulate = Color(1, 1, 1, 0.29411766)
+scroll_scale = Vector2(0.63, 1)
+scroll_offset = Vector2(-52, 39)
 repeat_size = Vector2(865, 0)
-repeat_times = 3
+autoscroll = Vector2(10, 0)
+repeat_times = 8
 
-[node name="layer15" type="Sprite2D" parent="Layer9" unique_id=1620425380]
-position = Vector2(801, -8)
-texture = ExtResource("2_bk4g1")
+[node name="layer21" type="Sprite2D" parent="RiverFoam2" unique_id=1921718602]
+position = Vector2(-864, -3)
+texture = ExtResource("9_u5g51")
 
-[node name="Layer10" type="Parallax2D" parent="." unique_id=908843299]
+[node name="RiverBank" type="Parallax2D" parent="." unique_id=407241505]
 scroll_scale = Vector2(0.9, 1)
-scroll_offset = Vector2(-682, 13)
+scroll_offset = Vector2(-781, 47)
 repeat_size = Vector2(865, 0)
-repeat_times = 3
+repeat_times = 8
 
-[node name="layer20" type="Sprite2D" parent="Layer10" unique_id=1912219598]
+[node name="layer15" type="Sprite2D" parent="RiverBank" unique_id=1620425380]
+position = Vector2(801, -8)
+texture = ExtResource("10_8qbna")
+
+[node name="RiverBank2" type="Parallax2D" parent="." unique_id=2071194409]
+scale = Vector2(1.2496448, 1.2496448)
+scroll_scale = Vector2(0.95, 1)
+scroll_offset = Vector2(-281, 54)
+repeat_size = Vector2(865, 0)
+repeat_times = 8
+
+[node name="layer15" type="Sprite2D" parent="RiverBank2" unique_id=554143197]
+position = Vector2(801, -8)
+texture = ExtResource("10_8qbna")
+
+[node name="Foreground" type="Parallax2D" parent="." unique_id=908843299]
+scroll_scale = Vector2(0.9, 1)
+scroll_offset = Vector2(-394, 36)
+repeat_size = Vector2(865, 0)
+repeat_times = 8
+
+[node name="layer20" type="Sprite2D" parent="Foreground" unique_id=1912219598]
 position = Vector2(-7, 33)
-texture = ExtResource("10_u5g51")
+texture = ExtResource("11_jvpwg")
 region_rect = Rect2(0, 151, 865, 101)
+
+[node name="colorRect" type="ColorRect" parent="Foreground" unique_id=1913579956]
+offset_left = 393.0
+offset_top = 179.0
+offset_right = 1258.0
+offset_bottom = 915.0
+color = Color(0.08235294, 0.13333334, 0.20784314, 1)

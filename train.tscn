@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://c4hkqoe1gti15"]
 
-[ext_resource type="PackedScene" uid="uid://ic6cmj3mhtqw" path="res://river2.tscn" id="1_kfycv"]
+[ext_resource type="PackedScene" uid="uid://cbbelnj5o5f4c" path="res://autoscroll.tscn" id="1_kfycv"]
 [ext_resource type="Texture2D" uid="uid://b11og53nnl5q5" path="res://assets/Train.png" id="6_l5j6f"]
 [ext_resource type="Texture2D" uid="uid://fbgh2vh75ju0" path="res://assets/Train 2.png" id="7_n14qy"]
 
@@ -70,26 +70,29 @@ animations = [{
 
 [node name="node2d" type="Node2D" unique_id=1250648170]
 
-[node name="node2d" parent="." unique_id=1496198752 instance=ExtResource("1_kfycv")]
-position = Vector2(619, -175.99998)
-scale = Vector2(0.80135787, 0.80135787)
+[node name="Parralax" parent="." unique_id=1496198752 instance=ExtResource("1_kfycv")]
+position = Vector2(71, -188)
 
 [node name="camera2d" type="Camera2D" parent="." unique_id=791107273]
-position = Vector2(-70, -105)
+position = Vector2(57, -235)
 offset = Vector2(0, -8.765)
-zoom = Vector2(3.97, 3.97)
+zoom = Vector2(2.05, 2.05)
 
 [node name="animatedSprite2d2" type="AnimatedSprite2D" parent="." unique_id=1271859320]
+visible = false
 light_mask = 0
 z_as_relative = false
 texture_filter = 3
-position = Vector2(-8, -64)
+position = Vector2(-281.64734, -7.730713)
+scale = Vector2(1.1840436, 1.1840436)
 sprite_frames = SubResource("SpriteFrames_isp7n")
 animation = &"new_animation"
 autoplay = "new_animation"
 speed_scale = 3.0
+offset = Vector2(227, -57)
 
 [node name="colorRect" type="ColorRect" parent="." unique_id=1435986912]
+visible = false
 offset_left = -355.0
 offset_right = 1645.0
 offset_bottom = 200.0
@@ -97,9 +100,15 @@ scale = Vector2(0.7101971, 0.9297004)
 color = Color(0.15, 0.13987501, 0.109500006, 1)
 
 [node name="train2" type="Sprite2D" parent="." unique_id=2035881572]
-position = Vector2(426, -64)
+visible = false
+position = Vector2(-281.64734, -7.730713)
+scale = Vector2(1.1840436, 1.1840436)
 texture = ExtResource("7_n14qy")
+offset = Vector2(661, -57)
 
 [node name="train3" type="Sprite2D" parent="." unique_id=1140851654]
-position = Vector2(808, -64)
+visible = false
+position = Vector2(-281.64734, -7.730713)
+scale = Vector2(1.1840436, 1.1840436)
 texture = ExtResource("7_n14qy")
+offset = Vector2(1043, -57)

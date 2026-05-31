@@ -1,8 +1,7 @@
 [gd_scene format=3 uid="uid://bnsppwwr3mkmy"]
 
-[ext_resource type="PackedScene" uid="uid://dieb65bpch6f6" path="res://assets/overworld/GandalfHardcore Background layers/Normal BG/background.tscn" id="1_ryguw"]
 [ext_resource type="Texture2D" uid="uid://wb0uc1bmnnt2" path="res://assets/overworld/Tree2.png" id="2_vivmo"]
-[ext_resource type="PackedScene" uid="uid://ddnq3h1u2o1l5" path="res:// river.tscn" id="2_w48qg"]
+[ext_resource type="PackedScene" uid="uid://cbbelnj5o5f4c" path="res://autoscroll.tscn" id="2_ycdy4"]
 [ext_resource type="PackedScene" uid="uid://k5dq35qmdyjl" path="res://assets/horse/horse.tscn" id="4_1bvp3"]
 [ext_resource type="Script" uid="uid://c6dfpbbueaerg" path="res://camera.gd" id="4_lquwl"]
 [ext_resource type="PackedScene" uid="uid://xp1lgvm1y3b0" path="res://tiles.tscn" id="5_4c57u"]
@@ -101,12 +100,12 @@ font_weight = 125
 [node name="main" type="Node2D" unique_id=2042244770]
 
 [node name="camera" type="Camera2D" parent="." unique_id=1333406191 node_paths=PackedStringArray("targets")]
-position = Vector2(-111, -112)
-zoom = Vector2(4.015, 4.015)
-limit_left = -396
-limit_top = -271
-limit_right = 895
-limit_bottom = 22
+position = Vector2(-69, -269)
+zoom = Vector2(4.04, 4.04)
+limit_left = -433
+limit_top = 91
+limit_right = 858
+limit_bottom = 384
 limit_smoothed = true
 position_smoothing_enabled = true
 position_smoothing_speed = 7.965
@@ -118,15 +117,13 @@ script = ExtResource("4_lquwl")
 targets = [NodePath("../game/character"), NodePath("../game/horse")]
 
 [node name="game" type="Node2D" parent="." unique_id=1468135139]
+position = Vector2(24, 372)
 
-[node name="node2d" parent="game" unique_id=1496198752 instance=ExtResource("2_w48qg")]
-position = Vector2(99, -121)
-scale = Vector2(0.7740713, 0.7740713)
-
-[node name="parralax" parent="game" unique_id=371353526 instance=ExtResource("1_ryguw")]
-visible = false
-position = Vector2(426, -20)
-scale = Vector2(0.3626304, 0.3626304)
+[node name="Parralax" parent="game" unique_id=1496198752 instance=ExtResource("2_ycdy4")]
+position = Vector2(-177, -173)
+speed = 0.0
+rotationFactor = 0.5
+rotationPivot = 0.373
 
 [node name="parallax2d" type="Parallax2D" parent="game" unique_id=2011801766]
 scroll_scale = Vector2(0.99, 1)

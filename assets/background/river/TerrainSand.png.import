@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kpvx16tlukvv"
-path="res://.godot/imported/Group 3.png-bc731dbb50c84a62333d96309a2815a1.ctex"
+uid="uid://b7hyqc77v014w"
+path="res://.godot/imported/TerrainSand.png-4d7fb4d51cdcaf8c4d1299708a4a466f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/background/river/Group 3.png"
-dest_files=["res://.godot/imported/Group 3.png-bc731dbb50c84a62333d96309a2815a1.ctex"]
+source_file="res://assets/background/river/TerrainSand.png"
+dest_files=["res://.godot/imported/TerrainSand.png-4d7fb4d51cdcaf8c4d1299708a4a466f.ctex"]
 
 [params]
 
