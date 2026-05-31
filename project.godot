@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Godot"
-run/main_scene="uid://cbbelnj5o5f4c"
+run/main_scene="uid://c4hkqoe1gti15"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 
 [display]

@@ -16,7 +16,7 @@
 [node name="Parralax" type="Node2D" unique_id=1496198752]
 script = ExtResource("1_cqqb6")
 speed = 300.0
-rotationFactor = 0.9889999999999999
+rotationFactor = 0.989
 rotationMultiplier = 0.5
 rotationPivot = 0.214
 
